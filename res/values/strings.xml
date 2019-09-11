@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BookMyShow</string>
+    <string name="srarch_hint"><![CDATA[Search for Movies Events & More]]></string>
+</resources>

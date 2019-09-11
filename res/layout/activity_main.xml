@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333546">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:hint="@string/srarch_hint"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/bell"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:tint="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333546">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Movies"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Events"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Plays"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sports"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Activities"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Monument"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/top_banner"
+        android:layout_below="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/top_banner"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/movies"
+        android:layout_below="@+id/top_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/view_all_movies"
+        android:layout_below="@+id/top_banner"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:layout_margin="10dp"
+        android:textColor="#0000FF"/>
+
+    <ImageButton
+        android:id="@+id/avengers"
+        android:layout_below="@+id/movies"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:src="@drawable/avengers"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/txt_avengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avengers"
+        android:layout_below="@id/avengers"
+        android:layout_alignStart="@+id/avengers"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/heart"
+        android:layout_below="@id/txt_avengers"
+        android:layout_alignStart="@+id/txt_avengers"/>
+
+    <ImageButton
+        android:id="@+id/ironman"
+        android:layout_below="@+id/movies"
+        android:layout_toEndOf="@+id/avengers"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:src="@drawable/ironman"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/txt_ironmann"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iron Man"
+        android:layout_alignStart="@+id/ironman"
+        android:layout_below="@+id/ironman"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/heart"
+        android:layout_below="@id/txt_ironmann"
+        android:layout_alignStart="@+id/txt_ironmann"/>
+
+    <ImageButton
+        android:id="@+id/harrypotter"
+        android:layout_below="@+id/movies"
+        android:layout_toEndOf="@id/ironman"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:src="@drawable/harrypotter"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/txt_harrypotter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harry Potter"
+        android:layout_alignStart="@+id/harrypotter"
+        android:layout_below="@+id/harrypotter"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/heart"
+        android:layout_below="@id/txt_harrypotter"
+        android:layout_alignStart="@+id/txt_harrypotter"/>
+
+    <ImageButton
+        android:id="@+id/titanic"
+        android:layout_below="@+id/movies"
+        android:layout_toEndOf="@+id/harrypotter"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        android:src="@drawable/titanic"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titanic"
+        android:layout_alignStart="@+id/titanic"
+        android:layout_below="@+id/titanic"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
